@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitaly Tea</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Yrsa&display=swap">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/vitalytea.png" alt="Logo"></a>
+        </div>
+        <div class="site-name"><a href="index.html">Vitaly Tea</a></div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <div class="subnav" style="font-family: Yrsa;">
+                    <ul>
+                        <li><a href="services.html">Digital Printing</a></li>
+                        <li><a href="services.html">Paper Stock</a></li>
+                        <li><a href="services.html">Ink</a></li>
+                        <li><a href="services.html">Binding</a></li>
+                        <li><a href="services.html">Laminating</a></li>
+                        <li><a href="services.html">Cutting</a></li>
+                    </ul>
+                </div>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1 class="welcome-heading" style="color: #3b2004;">Contact Us</h1>
+        <section class="section">
+            <div class="section-text" style=" color: #3b2004; font-size:25px; font-family: 'Yrsa';">
+                <p>We'd love to hear from you and address any concerns you may have, so don't hesitate to send us a
+                    message! </p>
+            </div>
+        </section>
+        <div class="row" style="padding-top: 60px;">
+            <div class="col-lg-6">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name" style="font-family: Yrsa; font-size: 25px; color: #3b2004;">Name:</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email" style="font-family: Yrsa; font-size: 25px; color: #3b2004;">Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="concern"
+                            style="font-family: Yrsa; font-size: 25px; color: #3b2004;">Concern:</label>
+                        <textarea class="form-control" id="concern" rows="5"
+                            placeholder="Enter your concern"></textarea>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn btn-primary" onclick="validateForm()">Send</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-6" style="font-size: 18px; color: #3b2004;">
+                <br> <br> <br> <br>
+                <a href="https://www.google.com/maps/place/FEU+Institute+of+Technology/@14.6041242,120.9860498,17z/data=!3m1!4b1!4m6!3m5!1s0x3397c9f8b14eb259:0xad4d12caac9a068e!8m2!3d14.604119!4d120.9886247!16zL20vMDkyanNw?entry=ttu"
+                    target="_blank">
+                    <img src=".\images\loc.png" alt="Address Icon"
+                        style="vertical-align: middle; margin-left: 70px; "></a>
+                &nbsp;&nbsp;&nbsp;Padre Paredes St, Sampaloc, Manila, 1015 Metro Manila<br><br>
+                <img src=".\images\phone.png" alt="Phone Icon" style="vertical-align: middle; margin-left: 70px;">
+                &nbsp;&nbsp;&nbsp;(02) 8281 8888<br> <br>
+                <a href="https://www.feutech.edu.ph/contact" target="_blank">
+                    <img src=".\images\email.png" alt="Email Icon"
+                        style="vertical-align: middle; margin-left: 70px;"></a>
+                &nbsp;&nbsp;&nbsp;info@feutech.edu.ph<br><br>
+                <hr>
+            </div>
+
+        </div>
+
+        <div class="modal fade" id="emptyFieldModal" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Empty Field</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Please fill in all the fields.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <footer>
+        <p>This is for education purpose only. &copy; </p>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
